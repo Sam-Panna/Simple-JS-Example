@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .options{
+            display: flex;
+            /* gap: 1rem; */
+            justify-content: space-between;
+            align-items: end;
+            /* border: 2px solid red; */
+            width: 15rem;
+            border-bottom: 2px solid black;
+            
+           
+           
+        }
+        .options p{
+            font-size: 2rem;
+            color: Blue;
+            /* border: 2px solid red; */
+            margin: 0;
+            /* border-left: 2px solid black; */
+           
+           
+           
+            
+        }
+        .options .line{
+            color: black !important;
+        }
+        .options p:hover{
+            color: red;
+            cursor: pointer;
+        }
+
+        .box{
+            border: 2px solid blueviolet;
+            border-radius: 3rem;
+            height: 30rem;
+            width: 35rem;
+            padding: 2rem;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="options">
+        <p id="html" class="htmlcls" onclick="btnclick()">html </p>
+        <p class="line">|</p>
+        <p id="css" class="csscls" onclick="btnclick()"> css </p>
+        <p class="line">|</p>
+        <p id="js" class="jscls" onclick="btnclick()"> JS </p>
+    </div>
+    <div class="box">
+        <h1 class="htmltxt">Hi I AM HTML</h1>
+        <h1 class="csstxt">HELLO I AM CSS</h1>
+        <h1 class="jstxt">IT'S ME JS</h1>
+    </div>
+
+    <script src="./index.js">
+    </script>
+    
+</body>
+</html>
+
+
